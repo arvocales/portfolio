@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="fontawesome/js/all.js"></script> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Arcel Vocales - UI/ UX Designer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="body-content" id="about">
+                <div class="about-content">
+                    <div class="col-50" id="translate">
+                        Hi! I'm <span class="colored">Arcel</span>, a UI/UX Designer based in Makati, Philippines. 
+                        <div class="social-media">social media links</div>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/arcel-vocales/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://dribbble.com/arcelvocales" target="_blank"><i class="fab fa-dribbble"></i> </a></li>
+                            <!-- <li><a href="http://"><i class="fab fa-github"></i> </a></li> -->
+                            <li><a href="https://www.instagram.com/arcelvocales" target="_blank"><i class="fab fa-instagram"></i> </a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="col-50" id="profilephoto">
+                        <img src="photos/header.png" class="img-responsive">
+                    </div>
+                </div>           
+            </div>
+            <div class="body-content hide" id="photography">
+                <h3>Photography</h3>
+                <div class="column">
+                    <img src="photos/001.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="photos/002.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="photos/003.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="photos/004.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="photos/001.JPG" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="photos/002.JPG" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="photos/003.JPG" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="photos/004.JPG" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content hide" id="portfolio">
+                <h3>Websites</h3>
+                <h3>Mock-Up Designs</h3>
+            </div>
+            <div class="body-content hide" id="contact">
+                <div class="contact-details">
+                    <h3>Contact</h3>
+                    <p> Hi! Thank you for reaching out, you can contact me through my <a class="colored" href="mailto:arvocales@gmail.com">email</a></li></p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <li><a class="about" >about</a></li>
+                        <!-- <li><a class="photography">photography</a></li>
+                        <li><a class="portfolio">portfolio</a></li> -->
+                        <li><a class="contact">contact</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
