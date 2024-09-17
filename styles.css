@@ -1,3 +1,12 @@
+
+/* 
+Created by Arcel 
+9/17/2024
+
+*/
+
+
+
 @font-face {
     font-family: 'Montserrat';
     src: url('font/Montserrat-Regular.woff2') format('woff2');
@@ -169,7 +178,7 @@ footer a:hover {
     }
 
     .work-item {
-        width: 100% !important;
+        width: 86%!important;
         margin-bottom: 30px;
         transition: all 0.3s ease;
     }
