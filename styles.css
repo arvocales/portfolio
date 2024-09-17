@@ -13,6 +13,9 @@ header {
     color: #212B36;
     text-align: center;
     padding: 20px 0;
+}
+
+.header-content{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
