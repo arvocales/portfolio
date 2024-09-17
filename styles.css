@@ -19,12 +19,14 @@ html, body {
     padding: 0;
     color: #333;
     background-color: #F7F7F7;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 .container {
     max-width: 1024px;
     margin: 0 auto; /* Center the container */
     padding: 0 20px; /* Add some horizontal padding */
+    transition: max-width 0.3s ease; /* Smooth resizing */
 }
 
 /* Header styles */
@@ -32,6 +34,7 @@ header {
     color: #212B36;
     text-align: center;
     padding: 20px 0;
+    transition: padding 0.3s ease; /* Smooth transition for padding */
 }
 
 .header-content {
@@ -43,6 +46,7 @@ header {
     background: white;
     align-items: center;
     width: 100%;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 /* Ensure header content uses the container's max width */
@@ -57,6 +61,7 @@ header .container {
     margin: 0;
     color: #212B36;
     font-size: 24px;
+    transition: font-size 0.3s ease; /* Smooth transition for font-size */
 }
 
 .title {
@@ -75,12 +80,18 @@ header .container {
 .icons img {
     width: 20px;
     margin: 0 10px;
+    transition: transform 0.3s ease; /* Subtle transform animation */
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Slight hover animation for icons */
 }
 
 /* Portfolio section */
 .portfolio {
     text-align: center;
     padding: 40px 20px;
+    transition: padding 0.3s ease;
 }
 
 /* Ensure portfolio section uses the container's max width */
@@ -93,20 +104,22 @@ header .container {
     font-size: 22px;
     text-transform: uppercase;
     color: #333;
+    transition: font-size 0.3s ease;
 }
 
 .work-items {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
 .work-item {
     background: white;
     padding: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: 28%;
     text-align: left;
+    transition: width 0.3s ease, padding 0.3s ease; /* Smooth transition for width and padding */
 }
 
 .work-item p {
@@ -116,23 +129,36 @@ header .container {
 .work-item img {
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s ease; /* Smooth image scaling */
+}
+
+.work-item img:hover {
+    transform: scale(1.05); /* Slight hover effect on images */
 }
 
 .work-item h3 {
     margin: 15px 0;
     font-size: 18px;
+    transition: font-size 0.3s ease; /* Smooth transition for font-size */
 }
 
+/* Footer styles */
 footer {
     background-color: #003841;
     color: white;
     text-align: center;
     padding: 20px 0;
+    transition: padding 0.3s ease; /* Smooth transition for padding */
 }
 
 footer a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFD700; /* Subtle color change on hover */
 }
 
 /* Responsive design */
@@ -143,7 +169,13 @@ footer a {
     }
 
     .work-item {
-        width: 80% !important;
+        width: 100% !important;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .portfolio {
+        padding: 20px 20px;
     }
 }
 
