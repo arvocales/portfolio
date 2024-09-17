@@ -201,3 +201,17 @@ footer a:hover {
         font-size: 16px;
     }
 }
+
+
+/* Style to disable the last two work items */
+.work-item:nth-last-child(1),
+.work-item:nth-last-child(2) { 
+    opacity: 0.5;
+    pointer-events: none; 
+    filter: grayscale(100%); 
+}
+
+.work-item:nth-last-child(1):hover,
+.work-item:nth-last-child(2):hover {
+    cursor: not-allowed; 
+}
