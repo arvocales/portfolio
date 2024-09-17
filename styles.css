@@ -1,0 +1,105 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003d3d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-content p {
+    margin: 5px 0;
+}
+
+.icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Portfolio section */
+.portfolio {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.work-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.work-item h3 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #003d3d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .work-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    .portfolio h2 {
+        font-size: 20px;
+    }
+
+    .work-item h3 {
+        font-size: 16px;
+    }
+}
