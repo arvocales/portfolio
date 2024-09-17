@@ -1,58 +1,72 @@
-    @font-face {
+@font-face {
     font-family: 'Montserrat';
     src: url('font/Montserrat-Regular.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
-    }
+}
 
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('font/Montserrat-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* General styles */
-html,body {
+html, body {
     font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     color: #333;
     background-color: #F7F7F7;
-    padding-top: 5px #003841;
 }
 
+.container {
+    max-width: 1024px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+/* Header styles */
 header {
     color: #212B36;
     text-align: center;
     padding: 20px 0;
 }
 
-.header-content{
+.header-content {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     text-align: left;
     padding: 20px;
     background: white;
-    margin: 0 20px;
+    align-items: center;
 }
 
+/* Ensure header content uses the container's max width */
+header .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Styling for header items */
 .header-content h1 {
     margin: 0;
     color: #212B36;
     font-size: 24px;
 }
 
-.title{
+.title {
     color: #212B36;
     align-self: center;
 }
 
-.icon{
+.icon {
     align-self: center;
 }
+
 .header-content p {
     margin: 5px 0;
 }
@@ -66,6 +80,12 @@ header {
 .portfolio {
     text-align: center;
     padding: 40px 20px;
+}
+
+/* Ensure portfolio section uses the container's max width */
+.portfolio .container {
+    text-align: center;
+    padding: 40px 0;
 }
 
 .portfolio h2 {
@@ -86,7 +106,7 @@ header {
     margin: 15px;
     padding: 20px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    width: 300px;
+    width: 33%;
     text-align: left;
 }
 
@@ -120,7 +140,7 @@ footer a {
     }
 
     .work-item {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
