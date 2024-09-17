@@ -69,7 +69,6 @@ header .container {
 .header-content h4 {
     margin: 0;
     color: #212B36;
-    font-size: 24px;
     transition: font-size 0.3s ease; /* Smooth transition for font-size */
     font-weight: bolder;
 }
@@ -85,6 +84,7 @@ header .container {
 
 .header-content p {
     margin: 0px 0;
+    font-size: 14px;
 }
 
 .icons img {
