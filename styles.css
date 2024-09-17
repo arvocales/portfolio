@@ -10,16 +10,20 @@ body {
 
 header {
     background-color: white ;
-    color: 212B36;
+    color: #212B36;
     text-align: center;
     padding: 20px 0;
 }
 
 .header-content h1 {
     margin: 0;
+    color: #212B36;
     font-size: 24px;
 }
 
+.title{
+    color: #212B36;
+}
 .header-content p {
     margin: 5px 0;
 }
