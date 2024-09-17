@@ -86,7 +86,6 @@ header .container {
 /* Ensure portfolio section uses the container's max width */
 .portfolio .container {
     text-align: center;
-    padding: 40px 0;
 }
 
 .portfolio h2 {
@@ -104,7 +103,6 @@ header .container {
 
 .work-item {
     background: white;
-    margin: 15px;
     padding: 20px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: 28%;
