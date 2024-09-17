@@ -1,6 +1,22 @@
+    @font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('font/Montserrat-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+  
+
 /* General styles */
-body {
-    font-family: 'Arial', sans-serif;
+html,body {
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     color: #333;
@@ -9,7 +25,6 @@ body {
 }
 
 header {
-    background-color: white ;
     color: #212B36;
     text-align: center;
     padding: 20px 0;
@@ -19,6 +34,10 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    background: white;
+    margin: 0 20px;
 }
 
 .header-content h1 {
@@ -29,6 +48,11 @@ header {
 
 .title{
     color: #212B36;
+    align-self: center;
+}
+
+.icon{
+    align-self: center;
 }
 .header-content p {
     margin: 5px 0;
@@ -62,9 +86,9 @@ header {
     background: white;
     margin: 15px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: 300px;
-    text-align: center;
+    text-align: left;
 }
 
 .work-item img {
